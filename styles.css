@@ -1,0 +1,71 @@
+/* Basic styling for the tip calculator */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.calculator-container {
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.input-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+label {
+    font-size: 1em;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
