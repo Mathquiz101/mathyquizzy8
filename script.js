@@ -1,55 +1,61 @@
 const questions = [
     {
-        question: "What is 20% of 150?",
-        options: ["15", "30", "25", "35"],
-        correct: 1
-    },
-    {
-        question: "If an item costs $200 and is sold at a 25% discount, what is the discounted price?",
-        options: ["$150", "$175", "$125", "$160"],
+        question: "What is the graph of a linear function y = 2x + 1?",
+        options: [
+            "A straight line with a positive slope",
+            "A straight line with a negative slope",
+            "A parabola opening upwards",
+            "A parabola opening downwards"
+        ],
         correct: 0
     },
     {
-        question: "What is the result of approximating 47.89 to the nearest whole number?",
-        options: ["48", "47", "50", "46"],
+        question: "Which of the following points lies on the graph of y = x + 3?",
+        options: ["(2, 5)", "(1, 1)", "(0, 3)", "(-1, -2)"],
         correct: 0
     },
     {
-        question: "A profit margin of 15% on an item sold for $300 means a profit of:",
-        options: ["$45", "$60", "$50", "$40"],
+        question: "What is the shape of the graph of a quadratic function y = x²?",
+        options: ["Parabola", "Straight line", "Hyperbola", "Circle"],
         correct: 0
     },
     {
-        question: "What is 75% of 80?",
-        options: ["60", "65", "55", "70"],
+        question: "For the quadratic function y = x² - 4x + 3, where does the graph intersect the x-axis?",
+        options: ["x = 1 and x = 3", "x = -1 and x = -3", "x = 2 and x = 4", "x = -2 and x = 4"],
         correct: 0
     },
     {
-        question: "Round 3.678 to the nearest hundredth",
-        options: ["3.68", "3.67", "3.70", "3.66"],
+        question: "The vertex of the parabola y = x² - 6x + 8 is the:",
+        options: ["Minimum point", "Maximum point", "y-intercept", "Point of intersection with the x-axis"],
         correct: 0
     },
     {
-        question: "What is the percentage increase from 40 to 50?",
-        options: ["20%", "25%", "15%", "10%"],
-        correct: 1
-    },
-    {
-        question: "Approximate 16.7 × 3.9 to the nearest ten",
-        options: ["60", "70", "65", "55"],
-        correct: 1
-    },
-    {
-        question: "If 30% of a number is 45, what is the number?",
-        options: ["150", "135", "165", "140"],
+        question: "If y = -x² + 2x + 3, does the parabola open upwards or downwards?",
+        options: ["Downwards", "Upwards", "Neither", "It is a straight line"],
         correct: 0
     },
     {
-        question: "Round 0.6837 to the nearest tenth",
-        options: ["0.7", "0.6", "0.68", "0.69"],
+        question: "What is the slope of the line y = -3x + 5?",
+        options: ["-3", "5", "3", "0"],
+        correct: 0
+    },
+    {
+        question: "Which of the following equations represents a parabola that opens upwards?",
+        options: ["y = 2x² + 3x + 1", "y = -x² + 4x + 2", "y = -2x² + 3", "y = x - 5"],
+        correct: 0
+    },
+    {
+        question: "Which point is the y-intercept of the function y = x² - 4?",
+        options: ["(0, -4)", "(4, 0)", "(2, -4)", "(0, 4)"],
+        correct: 0
+    },
+    {
+        question: "What is the slope of a horizontal line?",
+        options: ["0", "1", "Undefined", "-1"],
         correct: 0
     }
 ];
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -174,7 +180,8 @@ function endQuiz() {
     if (percentage > 50) {
         const nextLevelContainer = document.getElementById('next-level-container');
         const nextLevelLink = document.getElementById('next-level-link');
-        const link = 'https://waecmathsuccess.github.io/mathlevel2/';
+        const link =  'https://waecmathsuccess.github.io/mathlevel8/';
+
         
         nextLevelLink.href = link;
         nextLevelLink.textContent = link;
